@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
+    <title>ToDo List</title>
+    <!--JQuery-->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <!--JS-->
     <script src="js/script.js"></script>
+    <!--CSS-->
     <link rel="stylesheet" href="main.css">
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="app">
+        <header>
+            <img src="./crown.png" alt="">
+            <img class="due" src="./crown.png" alt="">
+            <h1>My ToDo List</h1>
+            <img src="./crown.png" alt="">
+            <img class="due" src="./crown.png" alt="">
+        </header>
+
+        <main>
+            <input 
+            type="text"
+            class="add-todo"
+            placeholder="Inserisci un elemento"
+            >
+            <ul class="todos"></ul>
+        </main>
+    </div>
+    <!--TEMPLATE-->
     
-    
+    <div id="template" style="display:none;">
+        <li>
+            <span class="text"></span>
+            <i class="fab fa-keycdn"></i>
+        </li>
+    </div>
 
 </body>
 </html>
